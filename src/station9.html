@@ -1,1 +1,66 @@
 <!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/station7.css" type="text/css" />
+    <title>Station 8</title>
+    <style>
+      .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* 共通のスタイル */
+      .card__title {
+        font-size: 24px;
+      }
+
+      .card__description {
+        font-size: 16px;
+        overflow: hidden; /* 説明文がはみ出る場合は隠す */
+        text-overflow: ellipsis; /* はみ出たテキストに三点リーダーを表示 */
+        white-space: nowrap; /* 説明文を1行で表示 */
+      }
+
+      /* タブレット（iPad）用のスタイル */
+      @media screen and (max-width: 768px) {
+        .card__title {
+          font-size: 20px; /* タイトルの文字を小さくする */
+        }
+
+        .card__description {
+          font-size: 14px; /* 説明の文字を小さくする */
+        }
+      }
+
+      /* スマホ（iPhoneSE）用のスタイル */
+      @media screen and (max-width: 320px) {
+        .card__description {
+          display: none; /* 説明文を非表示にする */
+        }
+
+        .card__title {
+          font-size: 18px; /* タイトルの文字をさらに小さくする */
+        }
+      }
+
+      /* 以下は先のコードと同じCSS */
+      /* ... */
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <!-- ここにカード1の内容 -->
+        <img src="./assets/image/railway-thumbnail.png" class="card__img-top" />
+        <p class="card__title">タイトル</p>
+        <p class="card__description">Joseph Solomon</p>
+        <p class="card__description">420 mil visualizações • há 1 ano</p>
+      </div>
+      <!-- 他のカードも同様に記述 -->
+    </div>
+  </body>
+</html>
